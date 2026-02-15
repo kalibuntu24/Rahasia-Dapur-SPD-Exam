@@ -81,6 +81,20 @@ Ikuti langkah-langkah berikut untuk mengatur dan menjalankan setiap bagian dari 
     -   Pindai kode QR dengan aplikasi **Expo Go** di ponsel Anda (Android/iOS).
     -   Atau tekan `a` untuk menjalankan di Android Emulator, `i` untuk menjalankan di iOS Simulator.
 
+### 4. Menjalankan dengan Docker (Opsional)
+
+Anda dapat menjalankan seluruh aplikasi (Backend, Frontend, dan Database) sekaligus menggunakan Docker Compose.
+
+1.  Pastikan **Docker** dan **Docker Compose** sudah terinstal di komputer Anda.
+2.  Jalankan perintah berikut di direktori root proyek:
+    ```bash
+    docker-compose up --build
+    ```
+3.  Akses aplikasi:
+    -   **Frontend Web**: [http://localhost:5173](http://localhost:5173)
+    -   **Backend API**: [http://localhost:5000](http://localhost:5000)
+    -   **MongoDB**: `localhost:27017`
+
 ## Teknologi yang Digunakan
 
 -   **Backend**: Node.js, Express, MongoDB, Mongoose, JWT Authentication.
